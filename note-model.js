@@ -1,11 +1,15 @@
 'use-strict';
 
 (function(exports) {
-  var EXCLAMATION_MARK_COUNT = 5
 
-  function exclaim(string) {
-    return string + "!".repeat(EXCLAMATION_MARK_COUNT);
+
+  function Note(text) {
+    this.text = text;
   };
 
-  exports.exclaim = exclaim;
+  Note.prototype.getText = function() {
+    return this.text;
+  };
+
+  exports.Note = Note;
 })(this);
