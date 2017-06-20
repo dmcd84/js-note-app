@@ -1,3 +1,8 @@
-var element = document.getElementById("app")
+(function(exports) {
 
-element.innerHTML = "howdy"
+  function NoteController(noteList) {
+    this.noteList = noteList;
+  }
+
+  exports.NoteController = NoteController;
+})(this);
