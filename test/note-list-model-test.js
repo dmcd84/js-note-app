@@ -1,6 +1,6 @@
 function testNoteListHasAnArrayToStoreNotes() {
   var noteList = new NoteList;
-  assert.isTrue(noteList.notes === []);
+  assert.isTrue(noteList.notes.length === 0);
 }
 
 function testNoteListCreatesNotes() {
